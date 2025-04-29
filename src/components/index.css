@@ -1,22 +1,57 @@
-.Apps{
-    display: grid;
-    grid-template-columns: 350px 350px 250px;
-    margin-left: 300px;
-    padding: 20px; 
-
-}
-/* styles.css (or any other CSS file) */
-.sidebar {
-    width: 300px;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    height: 100vh;
-    background-color: #15138b;
+ /* General Section Styling */
+.section {
+    padding: 50px 20px; /* Add spacing around each section */
+    margin: 20px 0; /* Add margin between sections */
+    border-radius: 10px; /* Add rounded corners */
+    background-color: #dceefb; /* Light blue background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.homepage {
-    flex-grow: 1;
-    margin-left: 300px; /* Adjust to match sidebar width */
-    padding: 20px; 
+/* Section Titles */
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #25274d; /* Deep blue color */
+}
+
+/* Description Paragraph */
+.description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #333; /* Dark text for readability */
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #e6f7ff; /* Slightly different shade for distinction */
+}
+
+/* Booking Section */
+#booking {
+    background-color: #dceefb; /* Same as the default section color */
+}
+
+/* About Section */
+#about {
+    background-color: #e6f7ff; /* Alternating color for variety */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #dceefb; /* Same as the default section color */
+}
+
+/* Add Responsive Design */
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 1.5rem; /* Smaller titles on mobile */
+    }
+
+    .section {
+        padding: 30px 10px; /* Adjust spacing for smaller screens */
+    }
 }

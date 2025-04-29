@@ -1,33 +1,17 @@
- // src/components/Login.js
-import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
-import LoginForm from './Loginform'; // Import the new component
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Navbar= () => {
-  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
-
-  const handleLogin = (userData) => {
-    // Handle login logic (e.g., call an API, set user state, etc.)
-    console.log('User data:', userData);
-    // For now, just log the user data
-  };
-
-  if (!isAuthenticated) {
+const Navbar = () => {
     return (
-      <div className="center-button">
-        {/* Render the LoginForm component */}
-        <LoginForm onLogin={handleLogin} />
-      </div>
+        <nav className="navbar">
+            <ul className="navbar-links">
+                <li><Link to="/gallery">Gallery</Link></li>
+                <li><Link to="/booking">Booking</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+            </ul>
+        </nav>
     );
-  }
-
-  // Rest of your existing code for authenticated users
-  return (
-    <div>
-      <p>Welcome, {user.name}!</p>
-      {/* Add other user-related components or navigation here */}
-    </div>
-  );
 };
 
 export default Navbar;

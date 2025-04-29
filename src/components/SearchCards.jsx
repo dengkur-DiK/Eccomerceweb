@@ -31,7 +31,7 @@ const fetchData = (value) => {
       <FaSearch id="icon" />
       <input
         type="text"
-        placeholder="Search for electronics"
+        placeholder="Search for images"
         value={input}
         onChange={(e) => handleChange(e.target.value)}
       />
