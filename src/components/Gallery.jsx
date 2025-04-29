@@ -1,7 +1,7 @@
 import React from "react";
-import headImage from "../assets/head.jpg"; // Import the image
-import meImage from "../assets/me.jpg"; // Import another image
-import photo3Image from "../assets/lula.jpg"; // Import a third image
+import headImage from "src/assets/dk.jpg"; // Import the image
+import meImage from "src/assets/me.jpg"; // Import another image
+import photo3Image from "src/assets/lula.jpg"; // Import a third image
 
 const Gallery = () => {
     // Use imported images in the photos array
