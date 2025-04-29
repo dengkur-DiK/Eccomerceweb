@@ -1,14 +1,11 @@
 import React from "react";
-import headImage from "src/assets/dk.jpg"; // Import the image
-import meImage from "src/assets/me.jpg"; // Import another image
-import photo3Image from "src/assets/lula.jpg"; // Import a third image
 
 const Gallery = () => {
-    // Use imported images in the photos array
+    // Use public paths for the photos
     const photos = [
-        { id: 1, src: headImage, alt: "Head Photo" },
-        { id: 2, src: meImage, alt: "Me Photo" },
-        { id: 3, src: photo3Image, alt: "Photo 3" },
+        { id: 1, src: "/assets/dk.jpg", alt: "Head Photo" },
+        { id: 2, src: "/assets/me.jpg", alt: "Me Photo" },
+        { id: 3, src: "/assets/lula.jpg", alt: "Photo 3" },
     ];
 
     return (
